@@ -9,6 +9,7 @@ const operation = Effect.gen(function* () {
   return { checked: 1, updated: 1, errors: 0 };
 });
 
+
 // Expected: Effect<{ checked: number; updated: number; errors: number; }, never, never>
 // Actual: Effect<{ checked: number; ... } | { checked: number; ... }, never, never>
 
